@@ -1,0 +1,23 @@
+//LAB #1 Basics of C++
+//Problem 3
+#include <iostream>
+using namespace std;
+
+void calc(double save, double exp) {
+	double eq = save - exp;
+	if (save > exp) {
+		cout << "Solvent: " << "New savings amount is " << "$" << eq;
+	}
+	else if (exp > save) {
+		cout << "BANKRUPT";
+	}
+}
+
+int main() {
+	double save, exp;
+	cout << "Enter your savings and then your expenses: " << endl;
+	cin >> save >> exp;
+	calc(save, exp);
+
+	return 0;
+}
